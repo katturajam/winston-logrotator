@@ -51,13 +51,15 @@ Valid meta characters in the datePattern are:
 
 | Field           | Required      | Description  |
 | --------------- |-------------- | ----------------------------------- |
-| file      | yes | The filename of the logfile to write output to.      |
+| filename      | yes | The filename of the logfile to write output to.      |
 | colorize  | no  | Boolean flag indicating if we should colorize output.|
 | timestamp | no  | Boolean flag indicating if we should prepend output with timestamps (default false). If function is specified, its return value will be used instead of timestamps. |
 | json      | no  | If true, messages will be logged as JSON (default true). |
 | size      | no  | The max file size of a log before rotation occurs. Supports 1024, 1k, 1m, 1g. Defaults to 100m |
 | keep      | no  | The number of rotated log files to keep (including the primary log file). Defaults to 5 |
 | compress  | no  | Optionally compress rotated files with gzip. Defaults to true. |
+
+Additonaly support all the winston file options
 
 
 ## LICENSE
