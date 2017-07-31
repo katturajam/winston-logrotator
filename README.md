@@ -5,21 +5,22 @@
 ## Usage
 
 ``` js
-  var winston = require('winston');
-  require('winston-daily-rotate-file');
-  
-  var transport = new (winston.transports.DailyRotateFile)({
-    filename: './log',
-    datePattern: 'yyyy-MM-dd.',
+var winston = require("winston");
+var rotate = require("winston-logrotator");
+
+let dialyRotate = rotate.createInstance({
+    label: 'file#error',
+    level: 'error',
+    size: "1K",
+    filename: "error.log",
+    datePattern: 'yyyy-MM-dd-',
     prepend: true,
-    level: process.env.ENV === 'development' ? 'debug' : 'info'
-  });
-  
-  var logger = new (winston.Logger)({
-    transports: [
-      transport
-    ]
-  });
+    handleExceptions: true
+});
+
+var logger = new winston.Logger({
+    transports: [dialyRotate]
+});
 
   logger.info('Hello World!');
 ```
