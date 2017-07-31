@@ -1,6 +1,6 @@
 {
   "name": "winston-logrotator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Winston rotate the file based on datepattern and limit the file size to rotate",
   "main": "index.js",
   "scripts": {
