@@ -1,7 +1,5 @@
 # winston-logrotator
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-
 > A transport for winston which logs to a rotating file each day.
 
 ## Usage
@@ -65,12 +63,3 @@ Valid meta characters in the datePattern are:
 ## LICENSE
 MIT
 
-##### AUTHOR: [Charlie Robbins](https://github.com/indexzero)
-##### MAINTAINER: [Matt Berther](https://github.com/mattberther)
-
-[npm-image]: https://badge.fury.io/js/winston-daily-rotate-file.svg
-[npm-url]: https://npmjs.org/package/winston-daily-rotate-file
-[travis-image]: https://travis-ci.org/winstonjs/winston-daily-rotate-file.svg?branch=master
-[travis-url]: https://travis-ci.org/winstonjs/winston-daily-rotate-file
-[daviddm-image]: https://david-dm.org/winstonjs/winston-daily-rotate-file.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/winstonjs/winston-daily-rotate-file
