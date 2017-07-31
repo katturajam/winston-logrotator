@@ -51,6 +51,7 @@ Valid meta characters in the datePattern are:
 
 | Field           | Required      | Description  |
 | --------------- |-------------- | ----------------------------------- |
+| label      | no | which micro service api throwing log     |
 | filename      | yes | The filename of the logfile to write output to.      |
 | colorize  | no  | Boolean flag indicating if we should colorize output.|
 | timestamp | no  | Boolean flag indicating if we should prepend output with timestamps (default false). If function is specified, its return value will be used instead of timestamps. |
